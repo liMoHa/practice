@@ -1,0 +1,77 @@
+/* 변수 설정 */
+:root {
+  --pdding: 10px;
+  --size-image: 40px;
+  --size-link-image: 30px;
+}
+
+/* 기본 값들 설정 */
+ul {
+  margin: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+/* a tag 설정*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  color: palevioletred;
+}
+
+/*label 설정 */
+section label:hover {
+  cursor: pointer;
+}
+
+section input[type="checkbox"] {
+  display: none;
+}
+
+/* img 사이즈 조정*/
+section label > img {
+  width: var(--size-image);
+  padding-right: var(--pdding);
+}
+
+section ul > li > a > img[src="./image/link.png"] {
+  width: var(--size-link-image);
+}
+
+/* margin */
+section ul > li {
+  padding-bottom: var(--pdding);
+}
+
+section ul > li > a > img {
+  padding-right: var(--pdding);
+}
+
+/* action */
+/* ~는 동시에 선택한다는 의미임. 즉 cheked가 안되어 있으면 ul도 실행이 안됨.*/
+section label::before {
+  content: "\f07c";
+  font-family: "Font Awesome 5 Free";
+  margin-right: calc(var(--pdding) / 2);
+}
+
+section input[type="checkbox"]:checked ~ ul {
+  display: none;
+}
+
+section input[type="checkbox"]:checked + label::before {
+  content: "\f07b";
+  font-family: "Font Awesome 5 Free";
+  margin-right: calc(var(--pdding) / 2);
+}
+
+section ul > li > a::before {
+  content: "\f0a4";
+  font-family: "Font Awesome 5 Free";
+  margin-right: calc(var(--pdding) / 2);
+}
