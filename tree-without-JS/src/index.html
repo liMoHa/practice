@@ -4,7 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link href="./style.css" rel="stylesheet" />
     <title>Make tree without JS</title>
   </head>
-  <body></body>
+  <body>
+    <section>
+      <!-- root1 -->
+      <input type="checkbox" id="root1" />
+      <label for="root1">ROOT1</label>
+      <ul class="ul-1">
+        <li>
+          <a href="#">node1</a>
+        </li>
+        <li>
+          <a href="#">node2</a>
+        </li>
+        <li>
+          <a href="#">node3</a>
+        </li>
+        <!-- root2 -->
+        <input type="checkbox" id="root2" />
+        <label for="root2">ROOT2</label>
+        <ul class="ul-2">
+          <li>
+            <a href="#">node1</a>
+          </li>
+          <li>
+            <a href="#">node2</a>
+          </li>
+          <!-- root3 -->
+          <input type="checkbox" id="root3" />
+          <label for="root3">ROOT3</label>
+          <ul class="ul-3">
+            <li>
+              <a href="#">node1</a>
+            </li>
+            <li>
+              <a href="#">node2</a>
+            </li>
+            <li>
+              <a href="#">node3</a>
+            </li>
+          </ul>
+        </ul>
+      </ul>
+    </section>
+  </body>
 </html>
