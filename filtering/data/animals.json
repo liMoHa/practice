@@ -1,0 +1,28 @@
+{
+    "animals": [
+        {
+            "type": "cat",
+            "image": "./img/cat1.jpg"
+        },
+        {
+            "type": "cat",
+            "image": "./img/cat2.jpg"
+        },
+        {
+            "type": "dog",
+            "image": "./img/dog1.jpg"
+        },
+        {
+            "type": "dog",
+            "image": "./img/dog2.jpg"
+        },
+        {
+            "type": "hamster",
+            "image": "./img/hamster1.jpg"
+        },
+        {
+            "type": "hamster",
+            "image": "./img/hamster2.jpg"
+        }
+    ]
+}

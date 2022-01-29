@@ -29,10 +29,9 @@ section .buttons .button {
   border-top-right-radius: 5px;
   background-color: gray;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
-section .buttons .button1 {
-}
 /* box */
 section .box {
   background-color: gray;
@@ -41,18 +40,6 @@ section .box {
 }
 
 /* action */
-section .buttons .button1.active {
-  background-color: #784f96;
-}
-
-.box.active {
-  background-color: #784f96;
-}
-
-section .buttons .button2.active {
-  background-color: #f4d5b0;
-}
-
-section .buttons .button3.active {
-  background-color: #99703b;
+.button2.active {
+  background-color: pink;
 }

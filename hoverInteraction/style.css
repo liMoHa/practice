@@ -1,0 +1,50 @@
+.card {
+  margin: auto;
+  margin-top: 100px;
+  background-color: black;
+  width: 300px;
+  height: 500px;
+  transition: all 0.5s ease;
+}
+
+.card h2 {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  background-color: purple;
+  opacity: 80%;
+}
+
+.card:hover h2 {
+  display: block;
+  color: white;
+  text-align: center;
+  margin: 0px;
+  position: relative;
+  top: 30%;
+}
+
+.card a {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.card:hover a {
+  display: inline;
+  text-decoration: none;
+  color: pink;
+  font-size: 20px;
+  top: 0;
+  border: 1px solid palevioletred;
+  padding: 10px;
+  position: relative;
+  top: 78%;
+  left: 10px;
+}
+
+.card a:hover {
+  background-color: rgb(156, 42, 167);
+  color: rgb(233, 222, 233);
+}

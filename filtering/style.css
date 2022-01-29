@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buttons button {
+  border-style: none;
+  background-color: pink;
+  padding: 5px 10px;
+  font-size: 18px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid gray;
+  transition: background-color 0.2s ease;
+}
+
+.buttons .all:hover {
+  transition: all 0.2s ease;
+  background-color: black;
+}
+
+.buttons .cat:hover {
+  transition: all 0.2s ease;
+  background-color: black;
+}
+
+.buttons .dog:hover {
+  transition: all 0.2s ease;
+  background-color: black;
+}
+
+.buttons .hamster:hover {
+  transition: all 0.2s ease;
+  background-color: black;
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  height: 310px;
+  transform: scale(0.7, 0.7);
+  opacity: 0.4;
+  transition: all 0.2s ease;
+}
+
+.images.anim-active {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.images div {
+  width: 200px;
+  height: 150px;
+  margin: 0 2px;
+}
+
+.images div img {
+  width: 100%;
+  height: 100%;
+}
